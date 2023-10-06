@@ -20,7 +20,15 @@
 18. Vamos a nextcloud y en "Communic projects" le damos a Get ZIP file para descargar el archivo comprimido
 19. Ahora lo copiamos a la carpeta
 20. Movemos el archivo(/var/www/html) (sudo mv /vagrant/latest.zip /var/www/html/)  
-21. 
+21. Vamos a /var/www/html/ (cd /var/www/html/)
+22. Entramos en el archivo (sudo unzip archivo)
+23. Copia el contenido de nextcloud al repositorio (sudo cp -R nextcloud/. .)
+24. Le ponemos permisos (chmod -R 775 .)
+25. Y todavia mas permisos (chown -R root:www-data .)
+26. Editamos el fichero (vi VagrantFile)
+
+
+
 
 
 
